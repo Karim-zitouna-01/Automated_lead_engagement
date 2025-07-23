@@ -1,0 +1,98 @@
+--- Lead 1 ---
+{
+  "company_name": "Deloitte",
+  "summary": "The web page is from Deloitte France. It highlights their expertise in digital transformation within the banking sector, particularly focusing on the digital maturity of French banks. It also touches upon their broader consulting services, commitment to social responsibility, and insights on various business challenges.",
+  "reason_for_match": "Deloitte is a global consulting firm with a strong presence in Francophone Europe. They offer services relevant to AI consulting, digital transformation, and data analytics, targeting large enterprises in industries like banking and insurance. The content discusses digital banking maturity, which aligns with the ICP's focus on technology maturity and the banking/financial services industry.",
+  "key_personal": [
+    "Claire Palmier, Manager Consulting",
+    "CEO de Deloitte France et Afrique francophone",
+    "Inger Cini, Malta",
+    "Channel St-Pierre, Canada",
+    "William Welch Deloitte"
+  ],
+  "relevant_urls": [
+    "https://www.deloitte.com/fr/fr/about/people/social-responsibility/deloitte-and-one-young-world.html?icid=top_deloitte-and-one-young-world"
+  ]
+}
+
+--- Lead 2 ---
+{
+  "company_name": "Connecting the dots in FinTech...",
+  "summary": "This page discusses the evolution of digital banking in France, highlighting the blend of traditional banking practices with FinTech innovations. It mentions Boursobank as an example of a bank successfully integrating technology and maintaining a strong reputation. The page also promotes a subscription service for FinTech news and analysis.",
+  "reason_for_match": "The article focuses on the Banking & Financial Services industry in France, discussing the integration of FinTech and digital transformation, which aligns with the ICP's focus on this industry and the need for AI consulting to optimize processes and leverage data.",
+  "key_personal": [],
+  "relevant_urls": [
+    "support@connectingthedotsinfin.tech"
+  ]
+}
+
+--- Lead 3 ---
+{
+  "company_name": "Microsoft",
+  "summary": "This webpage promotes Microsoft Azure, highlighting its AI and machine learning capabilities, databases, compute, containers, hybrid and multicloud solutions. It showcases how Azure can power innovation in various industries, particularly energy, and provides tools and services for building intelligent applications.",
+  "reason_for_match": "The content focuses on AI consulting-related services, including AI infrastructure, machine learning, data analytics, and cloud solutions, aligning with the ICP's service offering. It also mentions SAP and other technologies in the existing stack.",
+  "key_personal": [
+    "Dave McCarthy, Research Vice President at IDC"
+  ],
+  "relevant_urls": []
+}
+
+--- Lead 4 ---
+{
+  "company_name": "EY",
+  "summary": "This webpage is for EY Switzerland and provides information about their services, industries they serve, and insights on various topics including AI, entrepreneurship, and digital transformation. It also highlights their commitment to helping clients create long-term value through data and technology.",
+  "reason_for_match": "EY is a large consulting firm operating in Francophone Europe (Switzerland) that offers AI consulting services. They target large enterprises and address pain points related to digital transformation and innovation, aligning with the ICP.",
+  "key_personal": [
+    "Julia Wetter-Studinka, Head of Regional Sales Switzerland at Lufthansa Group",
+    "Andrea Carcano, co-founder and Chief Product Officer of Nozomi Networks",
+    "Sebastian Tobler, co-founder and CEO of GBY SA",
+    "Stasia Mitchell"
+  ],
+  "relevant_urls": [
+    "https://www.ey.com/en_ch"
+  ]
+}
+
+--- Lead 5 ---
+{
+  "company_name": "EY (Ernst & Young)",
+  "summary": "The web page discusses EY's consulting services, particularly focusing on technology and ecosystem transformation, and how they help clients create long-term value through data and technology-enabled solutions. It highlights the role of CIOs in driving ecosystem success and addresses the challenges and steps involved in building successful ecosystems.",
+  "reason_for_match": "The content focuses on technology strategy, digital transformation, and the role of CIOs in building successful ecosystems, aligning with the ICP's focus on AI consulting for companies with advanced technology maturity. The mention of SAP as an example of a symbiotic ecosystem also aligns with the ICP's existing stack criteria.",
+  "key_personal": [
+    "Global Managing Partner – EY Partner Ecosystem",
+    "EY Global Microsoft Alliance Lead",
+    "EY Americas Technology Strategy Lead",
+    "EY Americas Technology Strategy and Transformation Leader",
+    "EY Global Consulting Transformation Platform Leader"
+  ],
+  "relevant_urls": [
+    "https://www.ey.com/en_lv/insights/geostrategy/geostrategic-analysis",
+    "https://www.ey.com"
+  ]
+}
+
+--- Lead 6 ---
+{
+  "company_name": "WardsAuto (Informa Tech)",
+  "summary": "WardsAuto.com, part of Informa Tech, provides automotive news, analysis, and data. The page includes articles on AI in cybersecurity, autonomous driving, and automotive industry trends. It also promotes newsletters and resources for automotive professionals.",
+  "reason_for_match": "The content discusses AI applications within the automotive industry, which aligns with the ICP's focus on Manufacturing & Automotive. The mention of Gartner's predictions on AI in cybersecurity also suggests a technology maturity level that could benefit from AI consulting.",
+  "key_personal": [
+    "Deepti Gopal, director analyst at Gartner",
+    "Paul Myles, European Editor, Informa Group"
+  ],
+  "relevant_urls": [
+    "https://www.wardsauto.com"
+  ]
+}
+
+--- Lead 7 ---
+{
+  "company_name": "Gartner",
+  "summary": "This page is from Gartner, a research and advisory company that provides insights and tools for C-suite executives and their teams. It highlights their research capabilities, conferences, and client membership options, with a focus on helping organizations make smarter decisions and stay ahead of disruption. The page also mentions automotive case examples to build a generative AI strategy.",
+  "reason_for_match": "Gartner targets C-suite executives, CIOs, and IT leaders, aligning with the ICP's key decision-makers. They provide research and advisory services, which could involve helping companies scale AI initiatives and leverage data for strategic decision-making. The mention of automotive and generative AI also aligns with the ICP's industry focus and technology maturity.",
+  "key_personal": [],
+  "relevant_urls": [
+    "www.gartner.com"
+  ]
+}
+
