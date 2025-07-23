@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+google-generativeai
+tavily-python
+beautifulsoup4
+requests
+faiss-cpu
+langchain
+langchain-google-genai
+langgraph
+langchain-community
+pydantic-settings
