@@ -79,7 +79,7 @@ def test_summarize_page():
 
 
 if __name__ == "__main__":
-    test_generate_queries()
-    test_search_duckduckgo()
+    # test_generate_queries()
+    # test_search_duckduckgo()
     test_crawl_and_clean()
     test_summarize_page()
