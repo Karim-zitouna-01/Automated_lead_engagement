@@ -21,7 +21,7 @@ def generate_search_queries(icp: dict) -> list[str]:
     try:
         prompt = f"""
 You are an expert market researcher and lead generation specialist. Your goal is to generate highly effective and diverse search queries to identify companies and relevant content that perfectly match a given Ideal Customer Profile (ICP).
-
+relevant_urls
 The ICP will be provided in a JSON format. Your task is to extract key attributes from this ICP and combine them intelligently to create search queries that would be used on a general-purpose search engine (like Google) or professional networks (like LinkedIn).
 
 Focus on generating queries that uncover:
@@ -43,7 +43,7 @@ Focus on generating queries that uncover:
 * Generate queries for both English and French if the geography suggests it (Francophone Europe).
 
 **output format**:
-You MUST return only a valid Python list of 7 queries. Do not include any other text, explanation, or formatting outside of the list itself.
+You MUST return only a valid Python list of 20 queries. Do not include any other text, explanation, or formatting outside of the list itself.
 
 
 ICP (Ideal Customer Profile):
@@ -99,7 +99,7 @@ def clean_text(raw_text: str) -> str:
 
 async def async_crawl_and_clean(url: str) -> str:
     config = CrawlerRunConfig(
-        deep_crawl_strategy=BFSDeepCrawlStrategy(max_depth=1, max_pages=5, include_external=False),
+        deep_crawl_strategy=BFSDeepCrawlStrategy(max_depth=2, max_pages=5, include_external=False),
         scraping_strategy=LXMLWebScrapingStrategy(),
         verbose=False,
     )
