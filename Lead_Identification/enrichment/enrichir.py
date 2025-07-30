@@ -47,7 +47,7 @@ companies=[
 ]
 
 
-api_key= "AIzaSyCNrVVTYwDP40zmlVbaxHZPFRTapf6c1X4"
+api_key= ""
 
 def enrich(companies):
     save_company_jsons(companies)
