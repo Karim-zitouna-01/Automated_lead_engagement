@@ -136,12 +136,3 @@ def lanceYoutubeSearch(api_key: str, keyword: str, company_name: str) -> str:
     return all_summaries.strip()
 
 
-
-def main():
-    api_key = "AIzaSyDFgRg69JWCS8JPxItaq05DKlH_cFVFAb0"
-    keyword = input("Enter search keyword: ")
-    company_name = input("Enter company name for context: ")
-    print(lanceYoutubeSearch(api_key, keyword, company_name))
-
-if __name__ == "__main__":
-    main()

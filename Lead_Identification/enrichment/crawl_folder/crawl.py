@@ -92,18 +92,10 @@ Website Content:
         return f"❌ Gemini API Error: {e}"
 
 
-def run_crawl_pipeline(url: str, gemini_api_key: str="AIzaSyDFgRg69JWCS8JPxItaq05DKlH_cFVFAb0" ) -> str:
+def run_crawl_pipeline(url: str, gemini_api_key: str) -> str:
     print(f"🔍 Starting crawl for {url}...")
     cleaned = crawl_and_clean(url)
     print("cleaned cbon")
     print(cleaned)
     return summarize_with_gemini(cleaned, gemini_api_key)
 
-# ========== Usage ==========
-# if __name__ == "__main__":
-#     url = "https://www.ey.com/en_tn"
-#     gemini_api_key = "AIzaSyDFgRg69JWCS8JPxItaq05DKlH_cFVFAb0" 
-
-#     final_summary = run_crawl_pipeline(url, gemini_api_key)
-#     print("\n🔍 Summary from Gemini:\n")
-#     print(final_summary)
