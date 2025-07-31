@@ -27,7 +27,7 @@ def crawl_company_data(companies: list, api_key: str):
         company_name = sanitize_filename(company["company_name"])
         file_path = os.path.join(output_dir, f"{company_name}.txt")
 
-        with open(file_path, "w", encoding="utf-8") as file:
+        with open(file_path, "a", encoding="utf-8") as file:
             file.write(f"Company: {company_name}\n\n")
 
             if company["relevant_urls"]:
