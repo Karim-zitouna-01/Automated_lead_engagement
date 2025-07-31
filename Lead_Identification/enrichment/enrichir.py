@@ -1,8 +1,11 @@
 
-from json_putter import save_company_jsons
+import os
+from enrichment.json_putter import save_company_jsons
 from enrichment.crawl_folder.takes_json_crawl import crawl_company_data
 from enrichment.youtube_folder.takes_json_yt import append_youtube_results
-
+from dotenv import load_dotenv
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 companies=[
   {
@@ -47,12 +50,10 @@ companies=[
 ]
 
 
-api_key= ""
+
 
 def enrich(companies):
     save_company_jsons(companies)
-    crawl_company_data(companies,api_key)
-    append_youtube_results(companies,api_key)
+    crawl_company_data(companies,GEMINI_API_KEY)
+    append_youtube_results(companies,GEMINI_API_KEY)
 
-
-enrich(companies)
