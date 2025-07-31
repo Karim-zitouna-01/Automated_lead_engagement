@@ -1,0 +1,306 @@
+[
+  {
+    "urn": "7353037978736148480",
+    "full_urn": "urn:li:ugcPost:7352994215510867968",
+    "posted_at": {
+      "date": "2025-07-21 14:27:46",
+      "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1753100866970
+    },
+    "text": "🤝 𝗧𝗲𝗮𝗺 𝗦𝗽𝗶𝗿𝗶𝘁 𝗶𝗻 𝗔𝗰𝘁𝗶𝗼𝗻 – 𝗧𝗮𝗹𝗮𝗻 𝗦𝘂𝗺𝗺𝗲𝗿𝗖𝗮𝗺𝗽 𝟮𝟬𝟮𝟱 🌞\nHere’s a glimpse of our amazing teams in motion!\n Throughout the SummerCamp, collaboration has been at the heart of every activity ,from brainstorming ideas to tackling real challenges together.\nThese moments capture more than just smiles , they reflect the energy, creativity, and connection that define the Talan spirit.\nProud of every team and excited for what’s next! 💪✨\n#TalanTunisia #Talan #TalanSummerCamp",
+    "url": "https://www.linkedin.com/posts/talan-tunisie_talantunisia-talan-talansummercamp-ugcPost-7352994215510867968-r9sT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Talan",
+      "last_name": "- Tunisie",
+      "headline": "89,313 followers",
+      "profile_url": "https://www.linkedin.com/company/talan-tunisie/posts"
+    },
+    "stats": {
+      "total_reactions": 320,
+      "like": 142,
+      "support": 3,
+      "love": 127,
+      "insight": 0,
+      "celebrate": 48,
+      "comments": 0,
+      "reposts": 13
+    },
+    "media": {
+      "type": "images",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4RqAWP-Vnqw/feedshare-shrink_2048_1536/B4DZgsVO4DGsAw-/0/1753090423951?e=1756944000&v=beta&t=SitiokUEvjBS0pTNcBXLALupLyerefKMWLNhdlu-AkQ",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG4RqAWP-Vnqw/feedshare-shrink_2048_1536/B4DZgsVO4DGsAw-/0/1753090423951?e=1756944000&v=beta&t=SitiokUEvjBS0pTNcBXLALupLyerefKMWLNhdlu-AkQ",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEwLlbBdgtWBg/feedshare-shrink_2048_1536/B4DZgsVO6jHYAo-/0/1753090431195?e=1756944000&v=beta&t=X4H9teGc70c-WZBCMEpIXP--iczWvjlsWlPxNG7PmLg",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRvXqOVUDrBg/feedshare-shrink_2048_1536/B4DZgsVO3_HAAw-/0/1753090425335?e=1756944000&v=beta&t=yd6v8XOiHT9vYi65kxQw50gwI0jEOX5TENAHoivksb0",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHALikac6ruzg/feedshare-shrink_2048_1536/B4DZgsVO7DGsAo-/0/1753090428815?e=1756944000&v=beta&t=3YHnXpsSJYxtjqXFX-PfSjIIe8NYQFUm8NqhLN2Z7dg",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEKu0wn0nxj0A/feedshare-shrink_2048_1536/B4DZgsVO4VG8A0-/0/1753090425847?e=1756944000&v=beta&t=2lpshzl8inhp_xb6eTqNozz2_UoSs8pUVIGTeLeqU6g",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEOqB55rYJ97Q/feedshare-shrink_2048_1536/B4DZgsVO66HwAo-/0/1753090429225?e=1756944000&v=beta&t=C6G7kIIAbKeiR2fhXok308tuWxlmH1_RNzZL1QfJcRQ",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEFoVnhiyKLaw/feedshare-shrink_2048_1536/B4DZgsVO6yGsA0-/0/1753090431346?e=1756944000&v=beta&t=0E7xxckr_nINHN2RXjKZVTlQt-muQ0JjLTp4kUCyg0Y",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFALCCx07H58A/feedshare-shrink_2048_1536/B4DZgsVO7JG8Ao-/0/1753090431257?e=1756944000&v=beta&t=-7i7M8eumc5T7Ae63aJ9bHPEy_jJgAaUSDb8xkVQbKU",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2onR4QjRdKA/feedshare-shrink_2048_1536/B4DZgsVO6sGsAo-/0/1753090428773?e=1756944000&v=beta&t=DLOXoqKD7lN9tF3KCvlqnDfOOXaJSOW4avMD84doB9o",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQESye3Tjlj8mQ/feedshare-shrink_2048_1536/B4DZgsVO7FGkAs-/0/1753090430759?e=1756944000&v=beta&t=xADSgrABY_pamV_sqELxZGUPzltFz4jcxt04WnKnc24",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFkhzyTTHOzHA/feedshare-shrink_2048_1536/B4DZgsVO7CHwAo-/0/1753090431015?e=1756944000&v=beta&t=992uvTAkBjnM165tp7icOO-aY6qMbI2GB1zz9bEpAIA",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFoi6WpFyUqDw/feedshare-shrink_2048_1536/B4DZgsVO5THsAs-/0/1753090427980?e=1756944000&v=beta&t=Pc1JPApVGO9Dbas89Od-y_iZbOpy4lSUCgKgL7wJDFc",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGYCvVEKuudyA/feedshare-shrink_2048_1536/B4DZgsVO7GHAAo-/0/1753090430702?e=1756944000&v=beta&t=BtudcEk8NvNzmVB-TBbOvRqQxXCBBhyw4Jo7pLv5nbc",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQH2gLtnK_LhlA/feedshare-shrink_2048_1536/B4DZgsVO6qGsAo-/0/1753090426689?e=1756944000&v=beta&t=2TFaqF9PeNygplmCLBGQQY2AfzMdg-fRl-3uqggdzzA",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEV7KHz_pu_BA/feedshare-shrink_2048_1536/B4DZgsVO7AHYAw-/0/1753090430645?e=1756944000&v=beta&t=bFjZUzc-eg4gj0PoOgZC6CCsG7aDB-jhRAOAWQtKJqw",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuZ2w4779BlQ/feedshare-shrink_2048_1536/B4DZgsVO7SGkAo-/0/1753090430848?e=1756944000&v=beta&t=Kd8p44NLUQtDS78JmktstpSoFDAtfRBE_CuGOL9GAgI",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF_5g_I5mZLyQ/feedshare-shrink_2048_1536/B4DZgsVO69HYAo-/0/1753090431021?e=1756944000&v=beta&t=5pMMKRPY-OuWwiXvS0xs8VN379-SGsDFnMFKeNwOdEA",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEHVMvOlW56Iw/feedshare-shrink_2048_1536/B4DZgsVO6AHwAo-/0/1753090428447?e=1756944000&v=beta&t=9iF_-SCkpV9R1ZEau4hucnw_CiGbQ6nfpwp14ppnn4I",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQE6x1UTNJqdCg/feedshare-shrink_2048_1536/B4DZgsVO6kHwAo-/0/1753090431287?e=1756944000&v=beta&t=XTkvJCg_oqjhPQ147q9aZcfWBGtisXEpHwic8djJ2OY",
+          "width": 2048,
+          "height": 1536
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEAwJ6N5vJt8A/feedshare-shrink_2048_1536/B4DZgsVO69GQAs-/0/1753090431637?e=1756944000&v=beta&t=eMbtY9jw9CHawByMynUgZvSCRxvswmVP_QlPEJ9aZJ0",
+          "width": 2048,
+          "height": 1536
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjY5NTM0NTc3MDY3NzkyMDk3MjgtMTY1NzgzMzUwNjI3NQ=="
+  },
+  {
+    "urn": "7350884877304528896",
+    "full_urn": "urn:li:ugcPost:7350811960642260996",
+    "posted_at": {
+      "date": "2025-07-15 15:52:07",
+      "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1752587527586
+    },
+    "text": "🎬 Talan SummerCamp – Week 2: Learning, Building, Growing! 🚀\nWeek 2 was packed with energy and growth!\nOur participants went beyond the basics, diving into hands-on workshops, guided by experts and mentors who shared real-world insights and practical tools.\nThrough teamwork, mentorship, and creative problem-solving, ideas are starting to come to life, and so is the mindset of tomorrow’s digital leaders. ✨\nProud of the progress, the passion, and the people behind it all.\n#Talan #TalanTunisia #TalanSummerCamp #Mentoring #Workshops #Teamwork",
+    "url": "https://www.linkedin.com/posts/talan-tunisie_talan-talantunisia-talansummercamp-ugcPost-7350811960642260996-B3D7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Talan",
+      "last_name": "- Tunisie",
+      "headline": "89,313 followers",
+      "profile_url": "https://www.linkedin.com/company/talan-tunisie/posts"
+    },
+    "stats": {
+      "total_reactions": 172,
+      "like": 61,
+      "support": 1,
+      "love": 79,
+      "insight": 0,
+      "celebrate": 31,
+      "comments": 2,
+      "reposts": 7
+    },
+    "media": {
+      "type": "video",
+      "url": "https://dms.licdn.com/playlist/vid/v2/D5605AQFureUTsBWcgw/mp4-720p-30fp-crf28/B56ZgNUh64HsB8-/0/1752570187333?e=1754384400&v=beta&t=e4Ye_hec2O6ShxDJRbiRhZ0J7Gq5yLKW0V7RQTmSyFs"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjY5NTM0NTc3MDY3NzkyMDk3MjgtMTY1NzgzMzUwNjI3NQ=="
+  },
+  {
+    "urn": "7348667136703094784",
+    "full_urn": "urn:li:ugcPost:7348643641717919745",
+    "posted_at": {
+      "date": "2025-07-09 12:59:37",
+      "relative": "2 weeks ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1752058777023
+    },
+    "text": "JARVIS 2.0 is a great example of how Talan Tunisia’s Centre of Excellence combines domain expertise, innovation, and real-world impact. Looking forward to what’s next! 👏",
+    "url": "https://www.linkedin.com/posts/behjet-boussofara-198161_jarvis-20-le-futur-du-testing-qa-ugcPost-7348643641717919745-ATcd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+    "post_type": "quote",
+    "author": {
+      "first_name": "Behjet",
+      "last_name": "Boussofara",
+      "headline": "CEO TALAN TUNISIE",
+      "username": "behjet-boussofara-198161",
+      "profile_url": "https://www.linkedin.com/in/behjet-boussofara-198161?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAAFucQB_1nQBm04_NNfwsgqF7GcGLaG7V0"
+    },
+    "stats": {
+      "total_reactions": 43,
+      "like": 25,
+      "support": 1,
+      "love": 5,
+      "insight": 0,
+      "celebrate": 12,
+      "comments": 0,
+      "reposts": 3
+    },
+    "reshared_post": {
+      "urn": "7348637061848952832",
+      "posted_at": {
+        "date": "2025-07-09 11:00:06",
+        "relative": "2 weeks ago • Visible to anyone on or off LinkedIn",
+        "timestamp": 1752051606619
+      },
+      "text": "𝗝𝗔𝗥𝗩𝗜𝗦 𝟮.𝟬: 𝗥𝗲𝘁𝗵𝗶𝗻𝗸𝗶𝗻𝗴 𝗘𝗻𝗱-𝘁𝗼-𝗘𝗻𝗱 𝗧𝗲𝘀𝘁 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n🔄 𝗔 𝗳𝘂𝗹𝗹𝘆 𝗶𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗲𝗱 𝘁𝗲𝘀𝘁 𝗰𝘆𝗰𝗹𝗲, 𝗰𝗼𝗻𝗰𝗲𝗶𝘃𝗲𝗱 𝘄𝗶𝘁𝗵𝗶𝗻 𝗧𝗮𝗹𝗮𝗻 𝗧𝘂𝗻𝗶𝘀𝗶𝗮’𝘀 𝗖𝗲𝗻𝘁𝗿𝗲 𝗼𝗳 𝗘𝘅𝗰𝗲𝗹𝗹𝗲𝗻𝗰𝗲\nBuilding on our initial release—which automatically generated contextualized Gherkin scenarios and published them in Jira via domain-specific agents—JARVIS returns more powerful than ever. Designed and developed at Talan Tunisia’s Centre of Excellence, JARVIS 2.0 orchestrates every phase of your quality workflow—from test creation through execution, traceability, and reporting—so that your teams and toolchain operate as one seamless unit.\n🎯 𝗞𝗲𝘆 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁𝗶𝗮𝘁𝗼𝗿𝘀\n𝟭. 𝗘𝗺𝗯𝗲𝗱𝗱𝗲𝗱 𝗱𝗼𝗺𝗮𝗶𝗻 𝗲𝘅𝗽𝗲𝗿𝘁𝗶𝘀𝗲\n• Dedicated agents for Finance (IFRS), Accounting, CSR…\n• Functional, edge-case, and end-to-end tests prioritized around your business goals\n• Built-in compliance with internal policies and external regulations\n𝟮. 𝗘𝗳𝗳𝗼𝗿𝘁𝗹𝗲𝘀𝘀 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻\n• One-step Gherkin → executable tests\n• Automatic UI-change adaptation with zero manual maintenance\n• Intelligent test-history graph to eliminate redundancy and continuously optimize your suite\n𝟯. 𝗡𝗮𝘁𝗶𝘃𝗲 𝗟𝗟𝗠 𝘁𝗲𝘀𝘁𝗶𝗻𝗴\n• First-of-its-kind platform for validating generative AI applications\n• Automated generation of test data aligned with your specifications\n• Built-in scoring of AI responses to ensure reliability and performance\n💡 𝗠𝗲𝗮𝘀𝘂𝗿𝗮𝗯𝗹𝗲 𝗶𝗺𝗽𝗮𝗰𝘁 𝗳𝗿𝗼𝗺 𝗱𝗮𝘆 𝗼𝗻𝗲\n• Up to 60 % reduction in validation cycles\n• Continuous regression testing with zero manual intervention\n• Early defect detection powered by predictive analytics\n🚀 𝗔𝘁 𝗧𝗮𝗹𝗮𝗻 𝗧𝘂𝗻𝗶𝘀𝗶𝗮’𝘀 𝗖𝗲𝗻𝘁𝗿𝗲 𝗼𝗳 𝗘𝘅𝗰𝗲𝗹𝗹𝗲𝗻𝗰𝗲, 𝘄𝗲 𝗱𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗝𝗔𝗥𝗩𝗜𝗦 𝟮.𝟬 𝘁𝗼 𝗮𝗺𝗽𝗹𝗶𝗳𝘆 𝘆𝗼𝘂𝗿 𝗤𝗔 𝘁𝗲𝗮𝗺𝘀\nWith JARVIS 2.0 handling operational tasks, your QA experts focus on strategy—not execution. Do more with less: optimize resources and cut costs while boosting coverage and reliability.\n📋 𝗢𝘂𝗿 𝗧𝗲𝘀𝘁𝗶𝗻𝗴 𝗙𝗮𝗰𝘁𝗼𝗿𝘆 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀\nExplore our modular offerings, tailored to your maturity and needs:\n• Audit & requirements framing\n• Test repository construction & maintenance\n• Automation & orchestration of the full quality cycle\n• Deployment support & knowledge transfer\nMohamed Amine Aissaoui\n\n#TalanTunisia #CentreOfExcellence #JARVIS2 #AITesting #QualityEngineering #TestingFactory #Innovation #TimeToMarket",
+      "url": "https://www.linkedin.com/posts/talan-tunisie_jarvis-20-le-futur-du-testing-qa-activity-7348637061848952832-48W-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+      "post_type": "regular",
+      "author": {
+        "first_name": "Talan",
+        "last_name": "- Tunisie",
+        "headline": "89,313 followers",
+        "profile_url": "https://www.linkedin.com/company/talan-tunisie/posts"
+      },
+      "stats": {
+        "total_reactions": 0,
+        "like": 0,
+        "support": 0,
+        "love": 0,
+        "insight": 0,
+        "celebrate": 0,
+        "comments": 0,
+        "reposts": 0
+      },
+      "document": {
+        "title": "JARVIS 2.0  Le futur du testing QA",
+        "page_count": 4,
+        "url": "https://media.licdn.com/dms/document/media/v2/D4D1FAQFmc0fSWufQfg/feedshare-document-chunked-pdf/B4DZfqcWd3GsBs-/0/1751984993484?e=1754384400&v=beta&t=BkwwbwJj7OhnaqsX65ZxCOikYE98Q7LfolvVBEu5ybk",
+        "thumbnail": "https://media.licdn.com/dms/image/v2/D4D1FAQFmc0fSWufQfg/feedshare-document-cover-images_1920/B4DZfqcWd3GsA0-/0/1751984996052?e=1754384400&v=beta&t=GznkrJ-bzHk6Qzn6HiEBi-a7n4ve1tngo-Gw-0FWqGk"
+      }
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjY5NTM0NTc3MDY3NzkyMDk3MjgtMTY1NzgzMzUwNjI3NQ=="
+  },
+  {
+    "urn": "7346887837268475904",
+    "full_urn": "urn:li:ugcPost:7346871044378349568",
+    "posted_at": {
+      "date": "2025-07-04 15:09:18",
+      "relative": "3 weeks ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1751634558980
+    },
+    "text": "𝗗𝗲𝘀𝗰𝗿𝗶𝗯𝗲 𝘆𝗼𝘂𝗿 𝗳𝗶𝗿𝘀𝘁 𝘄𝗲𝗲𝗸 𝗮𝘁 Talan 𝗦𝘂𝗺𝗺𝗲𝗿𝗖𝗮𝗺𝗽 𝗶𝗻 𝗮 𝗳𝗲𝘄 𝘄𝗼𝗿𝗱𝘀?\nOur #SummerCamp2025 participants share their first impressions and they’re full of #energy and #excitement!\nThe adventure has just begun. 🚀",
+    "url": "https://www.linkedin.com/posts/talan-tunisie_summercamp2025-energy-excitement-ugcPost-7346871044378349568-Y4Rj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Talan",
+      "last_name": "- Tunisie",
+      "headline": "89,313 followers",
+      "profile_url": "https://www.linkedin.com/company/talan-tunisie/posts"
+    },
+    "stats": {
+      "total_reactions": 153,
+      "like": 43,
+      "support": 1,
+      "love": 93,
+      "insight": 1,
+      "celebrate": 15,
+      "comments": 8,
+      "reposts": 18
+    },
+    "media": {
+      "type": "video",
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4D05AQGW4S-GfcxrxA/mp4-720p-30fp-crf28/B4DZfVUSbDGkBw-/0/1751630588547?e=1754384400&v=beta&t=lZ-HVBPvtT4HISBNV6e8NGjU2OB7t1H1cLJJvm8cSg0"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjY5NTM0NTc3MDY3NzkyMDk3MjgtMTY1NzgzMzUwNjI3NQ=="
+  },
+  {
+    "urn": "7346516658850529280",
+    "full_urn": "urn:li:activity:7346462739390681088",
+    "posted_at": {
+      "date": "2025-07-03 14:34:23",
+      "relative": "3 weeks ago • Edited • Visible to anyone on or off LinkedIn",
+      "timestamp": 1751546063149
+    },
+    "text": "📍 In Hammamet, Tunisia, we’ve designed a unique space created by and for those who work while traveling ✈️ \n\nAt NOMAD, there’s : \n❌ No cheesy evening shows.\n❌ No repetitive dance routines like the \nMacarena.\n❌ no all-yyou-can-eat buffet… and definitely no food waste 👌\n\n✅ Just a place to work seriously, live freely, and connect with inspiring minds.\n\nColiving + Coworking:\n- Shared workspaces with real connections (not just your neighbor’s wifi)\n- Comfortable rooms to settle in—from one week to one year\n- Calm, creative, and mature atmosphere\n- An international community of freelancers, entrepreneurs, and digital creators\n\nHere, it’s all about focus, progress, and enjoying life wisely ✨",
+    "url": "https://www.linkedin.com/posts/nomad-residence_in-hammamet-tunisia-weve-designed-a-activity-7346462739390681088-acJv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF0s6xMBpZza5HcPUgf1B2dHDXmTz2XYAR0",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Nomad",
+      "last_name": "Residence",
+      "headline": "40 followers",
+      "profile_url": "https://www.linkedin.com/company/nomad-residence/posts"
+    },
+    "stats": {
+      "total_reactions": 7,
+      "like": 3,
+      "support": 1,
+      "love": 2,
+      "insight": 0,
+      "celebrate": 1,
+      "comments": 1,
+      "reposts": 2
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFCVCn90JTGg/feedshare-shrink_2048_1536/B4DZd821G4GsAw-/0/1750146450919?e=1756944000&v=beta&t=HBmdFg1KU0zfSl4h9UP_6pdH_MOcnSlRw_OtsJfXTTU",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFCVCn90JTGg/feedshare-shrink_2048_1536/B4DZd821G4GsAw-/0/1750146450919?e=1756944000&v=beta&t=HBmdFg1KU0zfSl4h9UP_6pdH_MOcnSlRw_OtsJfXTTU",
+          "width": 1536,
+          "height": 1536
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjY5NTM0NTc3MDY3NzkyMDk3MjgtMTY1NzgzMzUwNjI3NQ=="
+  }
+]

@@ -1,0 +1,5 @@
+TWITTER_ANALYSIS_API_KEY=your_api_key_chat_together
+LINKEDIN_ANALYSIS_API_KEY=your_api_key_chat_together
+INSTAGRAM_ANALYSIS_API_KEY=your_api_key_chat_together
+SYNTHESIS_API_KEY=your_api_key_chat_together
+GEMINI_API_KEY=your_api_key_Gemini
