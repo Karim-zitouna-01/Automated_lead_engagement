@@ -1,0 +1,25 @@
+# Web Crawling
+crawl4ai
+
+# LLM APIs
+google-generativeai   # For Gemini 1.5 / 2.5 API
+mistralai             # For Mistral models
+
+# Environment Variables
+python-dotenv
+
+# Utils
+requests
+
+# Optional (if you're using Pydantic for models)
+pydantic
+
+# Optional: Rich logs/debugging
+rich
+
+
+ddgs
+playwright==1.49.0
+google-genai
+yt_dlp
+

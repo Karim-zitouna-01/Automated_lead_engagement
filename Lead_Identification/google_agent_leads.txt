@@ -1,0 +1,123 @@
+--- Lead 1 ---
+{
+  "company_name": "BUSINESS & AI",
+  "summary": "BUSINESS & AI is an AI company involved in research and development with academic bodies in Tunisia and France, and carrying out AI projects with financial institutions and European automotive industry leaders.",
+  "reason_for_match": "The company explicitly mentions working with financial institutions and the European automotive industry, which aligns with the ICP's tier 1 industry focus. They are also based in Tunisia and have collaborations in France, fitting the geography criteria.",
+  "key_personal": [],
+  "relevant_urls": []
+}
+
+--- Lead 2 ---
+{
+  "company_name": "OECD",
+  "summary": "This page from the OECD provides live data and trends related to the development and use of AI across various sectors. It highlights the evolving methodologies for measuring AI and the importance of transparent data for policymakers.",
+  "reason_for_match": "The OECD's work on AI policy and data aligns with the need for AI consulting services, particularly in areas like governance, ethics, and responsible AI implementation, which are relevant to the ICP's focus on ESG principles and regulatory compliance.",
+  "key_personal": [],
+  "relevant_urls": []
+}
+
+--- Lead 3 ---
+{
+  "company_name": "Estuary",
+  "summary": "Estuary is a data integration platform that provides real-time ETL and ELT data pipelines. It focuses on Change Data Capture (CDC), offering low-latency data movement and transformation capabilities for analytics, operations, and AI.",
+  "reason_for_match": "The company provides data integration services, including ETL and ELT pipelines, which aligns with the 'AI Consulting' service offering. They also mention integrations with technologies like Snowflake, Databricks, and cloud platforms, which are part of the existing stack in the ICP.",
+  "key_personal": [
+    "Jonni Lundy, COO, Resend",
+    "Alexander Mays, Principal Engineer, Forward",
+    "Scott Vickers, CTO, Headset",
+    "Maximilian Seifert, CTO, Cosuno",
+    "Uri Vinetz, Director of Data, Livble",
+    "Istvan Kovacs, CTO, Recart",
+    "Ben Rogojan, Owner, Seattle Data Guy"
+  ],
+  "relevant_urls": []
+}
+
+--- Lead 4 ---
+{
+  "company_name": "ONEiO",
+  "summary": "ONEiO is a next-generation Managed Integration Service Provider that delivers Integration Ops as a Service for IT and technology service providers. They offer a fully managed, continuously optimized service that adapts to business changes automatically, focusing on automating and operating integrations rather than just building them.",
+  "reason_for_match": "ONEiO provides AI-enhanced integration services, which aligns with the 'AI Consulting' service in the ICP. They target large enterprises with complex IT environments, which fits the ICP's focus on large company sizes and advanced technology maturity. They also address pain points like operational inefficiencies and data silos.",
+  "key_personal": [
+    "Petteri Raatikainen (Product Director)"
+  ],
+  "relevant_urls": [
+    "https://www.oneio.cloud/",
+    "https://www.oneio.cloud/blog/what-is-informatica",
+    "https://www.oneio.cloud/solutions/for-enterprises",
+    "https://www.oneio.cloud/our-offering"
+  ]
+}
+
+--- Lead 5 ---
+{
+  "company_name": "Gartner",
+  "summary": "This page discusses Gartner's services for C-suite executives, IT leaders, and business leaders. It highlights a survey showing increased AI adoption in finance functions and the challenges finance leaders face in AI implementation, such as data and talent shortages. The page also includes information about Gartner's conferences and career opportunities.",
+  "reason_for_match": "Gartner provides consulting services and insights to C-suite executives, including those in finance, which aligns with the ICP's focus on key decision-makers like CFOs. The content also addresses pain points like data silos, talent scarcity, and the need to scale AI initiatives, which are listed in the ICP.",
+  "key_personal": [
+    "Marco Steecker, senior director, research at Gartner",
+    "Rob van der Meulen, Gartner (Media contact)"
+  ],
+  "relevant_urls": []
+}
+
+--- Lead 6 ---
+{
+  "company_name": "Gartner",
+  "summary": "This page contains an article discussing a Gartner survey on AI adoption in finance functions. The survey reveals that 58% of finance functions are using AI in 2024, with intelligent process automation, anomaly detection, and analytics being prominent applications. The article also highlights challenges such as data quality and talent scarcity, and discusses market uncertainty around generative AI.",
+  "reason_for_match": "The article discusses AI adoption in finance, which aligns with the ICP's focus on Banking & Financial Services and the need to scale AI in those functions. It also mentions challenges like data quality and talent scarcity, which are pain points listed in the ICP. The article also mentions Gartner, which is one of the preferred channels mentioned in the ICP.",
+  "key_personal": [
+    "Marco Steecker (Gartner finance practice research senior director)"
+  ],
+  "relevant_urls": []
+}
+
+--- Lead 7 ---
+{
+  "company_name": "Salesforce",
+  "summary": "This webpage discusses Salesforce's AI CRM solution for the automotive industry, including its features, benefits, pricing, and use cases. It highlights how AI can transform various aspects of the automotive business, from manufacturing and supply chain management to customer experience and autonomous vehicles.",
+  "reason_for_match": "The content focuses on AI applications within the automotive industry, which aligns with the ICP's tier 1 industry focus (Manufacturing & Automotive). It also mentions topics like supply chain optimization and customer experience, which are relevant pain points and business goals outlined in the ICP.",
+  "key_personal": [
+    "Heather Conneran - Director, Brand Experience Platforms, General Mills",
+    "Ola Källenius - CEO, Mercedes-Benz",
+    "Jim Farley - CEO, Ford",
+    "Antonio Rodríguez López - Chief Strategy and Transformation Officer, astara"
+  ],
+  "relevant_urls": []
+}
+
+--- Lead 8 ---
+{
+  "company_name": "Salesforce",
+  "summary": "This page contains two articles related to AI in the public sector. The first article discusses the AI skills gap in the public sector, based on a Salesforce survey. The second article focuses on how Salesforce's Agentforce and agentic AI can aid overstretched government workers by automating tasks and providing 24/7 availability.",
+  "reason_for_match": "The content discusses AI solutions for the public sector, which is a Tier 2 industry in the ICP. It also highlights pain points like operational inefficiencies and the need for automation, aligning with the ICP's pain points and buying motivations.",
+  "key_personal": [
+    "Casey Coleman, SVP, Global Government Solutions",
+    "Josh Gruenbaum, GSA Federal Acquisition Service Commissioner",
+    "Dave Rey, President of Salesforce Public Sector",
+    "Laura Stanton, FAS Deputy Commissioner",
+    "Nasi Jazayeri, Salesforce EVP and GM of Public Sector",
+    "Tatum"
+  ],
+  "relevant_urls": [
+    "https://itvmo.gsa.gov/onegov/"
+  ]
+}
+
+--- Lead 9 ---
+{
+  "company_name": "McKinsey & Company",
+  "summary": "This McKinsey & Company article discusses how generative AI can enhance customer personalization in marketing, focusing on targeted promotions and AI-driven content creation. It highlights the importance of data, decisioning, design, distribution, and measurement in achieving real-time personalization and improved marketing ROI.",
+  "reason_for_match": "McKinsey is a large consulting firm that advises companies in various industries, including those listed in the ICP (e.g., Retail, Telecom). The article discusses AI and data-driven strategies, aligning with the ICP's focus on AI consulting and the need for companies to leverage data for strategic decision-making.",
+  "key_personal": [
+    "Carolyn Spalding",
+    "Jianing Cheng",
+    "Molly McCulloch",
+    "Christine Y. Chen",
+    "Kelsey Robinson"
+  ],
+  "relevant_urls": [
+    "McKinsey_Website_Accessibility@mckinsey.com"
+  ]
+}
+
