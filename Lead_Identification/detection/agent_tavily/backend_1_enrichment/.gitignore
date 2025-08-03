@@ -1,0 +1,26 @@
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Distribution and build artifacts
+.dist/
+build/
+dist/
+
+# Temporary or generated files
+payload.json
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*~

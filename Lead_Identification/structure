@@ -1,0 +1,20 @@
+Lead_Identification/
+├── requirements.txt
+├── detection/
+│   ├── __init__.py
+│   ├── agent_tavily/
+│   │   ├── agent.py         # Langraph agent logic for Tavily search
+│   │   └── utils.py         # Helpers specific to Tavily (API calls, formatting)
+│   ├── agent_linkedin/
+│   │   ├── agent.py         # Langraph agent logic for LinkedIn search
+│   │   └── utils.py
+│   ├── agent_google/
+│   │   ├── agent.py         # Langraph agent logic for smart Google search
+│   │   └── utils.py
+│   ├── controller.py        # Orchestrates all detection agents
+│   └── detection_agent.py   # Combined langraph detection agent (calls the 3 above)
+├── enrichment/
+│   ├── (later: enrichment agents: scraping, social lookup, etc.)
+└── common/
+    ├── models.py            # Pydantic models used across agents
+    └── config.py            # API keys, constants
