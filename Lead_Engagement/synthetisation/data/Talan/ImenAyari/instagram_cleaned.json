@@ -1,0 +1,35 @@
+{
+  "platform": "instagram",
+  "username": "imenyari",
+  "full_name": "Imen Ayari",
+  "is_private": false,
+  "pk": "1541864609",
+  "bio": "",
+  "stats": {
+    "followers": 417,
+    "following": 4158,
+    "posts": 20,
+    "engagement_rate": 0.0,
+    "igtv_videos": 2,
+    "clips": 1
+  },
+  "profile_metadata": {
+    "is_verified": false,
+    "category": "Entrepreneur",
+    "category_id": 1617,
+    "profile_pic_url": "https://scontent-cdg4-1.cdninstagram.com/v/t51.2885-19/479703902_2114701135637708_2447824822335794048_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDc2LmMyIn0&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHpcP5e43Nti4_m0io_Lnd6zGnjuornDgMYn7Itru7CJFcM6F5DhYfGbxCoA8b7bvg&_nc_ohc=wdcTxIbaqzIQ7kNvwHL1_3k&_nc_gid=Z3y488Zp1H5aFUOQxsT77Q&edm=AKralEIBAAAA&ccb=7-5&oh=00_AfQCEhvaqd6spjNLIy-fdLWnKutcSpBPd07JtVwTQdbQLg&oe=688E59CB&_nc_sid=2fe71f",
+    "hd_profile_pic_url": "",
+    "hd_profile_pic_versions": []
+  },
+  "account_info": {
+    "account_type": 3,
+    "is_eligible_for_smb_support_flow": true,
+    "business_contact_method": "UNKNOWN",
+    "page_id": "106792358537740",
+    "page_name": "IG Ads Identity",
+    "has_highlight_reels": true,
+    "has_videos": true,
+    "has_chaining": true,
+    "has_private_collections": true
+  }
+}
