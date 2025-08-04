@@ -56,4 +56,5 @@ def enrich(companies):
     save_company_jsons(companies)
     crawl_company_data(companies,GEMINI_API_KEY)
     append_youtube_results(companies,GEMINI_API_KEY)
+    
 
