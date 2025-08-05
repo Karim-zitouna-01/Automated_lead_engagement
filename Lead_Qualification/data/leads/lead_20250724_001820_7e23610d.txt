@@ -1,0 +1,26 @@
+Lead ID: L-04523
+Company Name: NovaBank Group
+Website: https://www.novabank.com
+Industry: Banking & Financial Services
+Headquarters: Paris, France
+Number of Employees: ~4800
+Estimated Annual Revenue: ~€850M
+Geographic Market: France (EU)
+Technology Stack Detected: AWS, Snowflake, Apache Kafka, Power BI
+Digital Maturity Level: Advanced
+
+🧑 Decision-Makers
+● Name: Sophie Durand
+● Position: Chief Data Officer
+● LinkedIn Profile: https://linkedin.com/in/sophie-durand
+● Activity Level: High (posted recently on AI Ethics and Open Data)
+● Engagement Signals: Active on LinkedIn, speaks at data events
+
+📈 Business Signals
+● Hiring Activity:
+  ○ "Head of AI Strategy" — posted on LinkedIn (Dec 2024)
+  ○ "Data Governance Manager" — posted (Jan 2025)
+● Recent Projects Mentioned in Media:
+  ○ "NovaBank launches AI-driven risk modeling platform" (Les Echos, Feb 2025)
+  ○ Mentioned in 14 press articles in the last 6 months
+  ○ Partnership with Microsoft Cloud and Capgemini for digital transformation

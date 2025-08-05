@@ -1,0 +1,37 @@
+You are an expert in structured information extraction. Analyze this sales report and extract the following data:
+
+STRICT OUTPUT FORMAT (JSON):
+{
+    "lead_id": "string (if available)",
+    "company_name": "string",
+    "website": "string",
+    "industry": "string",
+    "headquarters": "string",
+    "employees": "int (approximate OK)",
+    "revenue": "string",
+    "geography": ["string"],
+    "technology_stack": ["string"],
+    "digital_maturity": "string (Basic/Intermediate/Advanced)",
+    "decision_makers": [
+        {
+            "name": "string",
+            "position": "string",
+            "linkedin": "string",
+            "activity_level": "string (Low/Medium/High)",
+            "engagement_signals": ["string"]
+        }
+    ],
+    "business_signals": {
+        "hiring_activity": ["string"],
+        "recent_projects": ["string"],
+        "press_mentions": "int",
+        "partnerships": ["string"]
+    }
+}
+
+Rules:
+1. Do not invent information
+2. Use null for missing data
+3. Format numbers (e.g., "~€850M" → "850000000")
+4. Standardize values (always in English)
+5. Return only validated JSON
