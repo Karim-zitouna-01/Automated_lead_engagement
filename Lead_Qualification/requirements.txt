@@ -1,0 +1,12 @@
+google-generativeai
+python-dotenv
+fastapi
+uvicorn
+pydantic
+python-multipart
+fpdf
+streamlit
+requests
+pandas
+plotly
+sentence-transformers

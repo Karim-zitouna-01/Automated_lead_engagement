@@ -1,0 +1,39 @@
+Lead ID: L-05388
+Company Name: GreenPulse Energy
+Website: https://www.greenpulse.com
+Industry: Renewable Energy & Sustainability
+Headquarters: Berlin, Germany
+Number of Employees: ~2,300
+Estimated Annual Revenue: ~€320M
+Geographic Market: Germany, Austria, Netherlands
+Technology Stack Detected: Microsoft Azure, Databricks, Tableau, Kubernetes
+Digital Maturity Level: Intermediate
+
+🧑 Decision-Makers
+Name: Lukas Richter
+
+Position: VP of Data & Innovation
+
+LinkedIn Profile: https://linkedin.com/in/lukas-richter
+
+Activity Level: Medium (last post about ESG analytics, May 2025)
+
+Engagement Signals: Participated in a smart energy roundtable; moderate LinkedIn presence
+
+📈 Business Signals
+Hiring Activity:
+
+“Data Platform Architect” — posted on company careers page (April 2025)
+
+“ESG Data Analyst” — posted on LinkedIn (March 2025)
+
+Recent Projects Mentioned in Media:
+
+“GreenPulse expands AI-powered energy forecasting tools” (Handelsblatt, May 2025)
+
+“Partnered with Siemens for real-time grid optimization” (April 2025)
+
+Press Mentions: 9 articles in the past 4 months
+
+Partnerships: Siemens, SAP Sustainability Cloud
+
