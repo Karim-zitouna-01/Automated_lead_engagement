@@ -2,6 +2,56 @@ import os
 import json
 from dotenv import load_dotenv
 from agents import DataConsolidationAgent, EngagementStrategyAgent
+import re
+
+def get_company_description(lead_data_path):
+    """Lit la description de l'entreprise à partir d'un fichier texte."""
+    try:
+        with open(os.path.join(lead_data_path, 'company_description.txt'), 'r', encoding='utf-8') as f:
+            return f.read().strip()
+    except FileNotFoundError:
+        return "Description de l'entreprise non disponible."
+
+def generate_json_report(markdown_text, company_description):
+    json_data = {'company_description': company_description}
+    # Extract summary info
+    summary_match = re.search(r'\*\*Résumé de Lead :\*\* (.*?) \((.*?)\)', markdown_text)
+    if summary_match:
+        json_data['nom_prenom'] = summary_match.group(1).strip()
+        json_data['titre'] = summary_match.group(2).strip()
+
+    # Split content by sections
+    sections = re.split(r'\n\*\*(.*?):\*\*\n', markdown_text)
+    
+    # First part is before any section, so we ignore it
+    sections = sections[1:]
+
+    for i in range(0, len(sections), 2):
+        section_title = sections[i].strip()
+        section_content = sections[i+1].strip()
+        
+        # Clean up section title to be a valid JSON key
+        section_key = section_title.lower().replace(' ', '_').replace('&', 'et')
+        section_key = re.sub(r'\(.*?\)', '', section_key).strip('_')
+
+        # Split content by list items
+        items = re.split(r'\n[\*\-]|^\d\.\s', section_content)
+        items = [item.strip() for item in items if item.strip()]
+        
+        if len(items) > 1:
+            json_data[section_key] = items
+        else:
+            json_data[section_key] = section_content
+
+    # Champs obligatoires
+    if 'nom_prenom' not in json_data:
+        json_data['nom_prenom'] = "Imen Ayari"
+    if 'company_name' not in json_data:
+        json_data['company_name'] = "Talan"
+    if 'url_linkedin' not in json_data:
+        json_data['url_linkedin'] = "Non disponible"
+
+    return json_data
 
 def main():
     load_dotenv()
@@ -12,7 +62,7 @@ def main():
         return
 
     # Chemin vers les données du lead (exemple pour Imen Ayari)
-    lead_data_path = r"C:\Users\yaola\Videos\formation_2025\Agentic_ai\Roua_task\data\Talan\ImenAyari"
+    lead_data_path = r"C:\Users\yaola\Videos\formation_2025\Agentic_ai\Automated_lead_engagement\Lead_Engagement\synthetisation\data\Talan\ImenAyari"
 
     # --- Agent 1: Consolidation des données ---
     print("\n--- Agent 1: Consolidation des données ---")
@@ -33,6 +83,18 @@ def main():
         f.write(final_strategy)
     
     print(f"Rapport Markdown pour Imen Ayari généré et sauvegardé dans : {output_file_md}")
+
+    # Get company description
+    company_description = get_company_description(lead_data_path)
+
+    # Générer et sauvegarder le rapport JSON
+    json_report = generate_json_report(final_strategy, company_description)
+    output_file_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), "imen_ayari_lead_report.json")
+    with open(output_file_json, 'w', encoding='utf-8') as f:
+        json.dump(json_report, f, ensure_ascii=False, indent=4)
+    
+    print(f"Rapport JSON pour Imen Ayari généré et sauvegardé dans : {output_file_json}")
+
 
 if __name__ == "__main__":
     main()
