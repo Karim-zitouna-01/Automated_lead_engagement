@@ -23,3 +23,5 @@ playwright==1.49.0
 google-genai
 yt_dlp
 
+celery
+redis
