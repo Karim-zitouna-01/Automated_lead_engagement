@@ -25,3 +25,4 @@ yt_dlp
 
 celery
 redis
+firebase-admin
