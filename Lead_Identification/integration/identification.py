@@ -1,9 +1,10 @@
 from typing import Dict, List
+from enrichment.upload_to_firestore import upload_leads_to_firestore
 from detection.detection_agent import detection_agent
-from enrichment.enrichir import enrich  # adjust import if needed
+from enrichment.enrichir import enrich 
 
 
-def run_lead_pipeline(icp: Dict) -> List[Dict]:
+def run_lead_pipeline(icp: Dict, service_id: str) -> List[Dict]:
     """
     Combines detection and enrichment into a single processing pipeline.
     
@@ -26,8 +27,7 @@ def run_lead_pipeline(icp: Dict) -> List[Dict]:
     urls = enrich(detected_leads)
 
 
-
-
+    upload_leads_to_firestore(detected_leads, urls, service_id)
 
 
     print("==========Enriched=============")
