@@ -7,7 +7,7 @@ mock_icp = {
     "company_size": "10-50",
     "industry": "Software",
     "location": "Europe"
-}
+} 
 
 # Mock outputs
 mock_detected_leads = [
