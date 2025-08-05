@@ -6,3 +6,4 @@ class Service(BaseModel):
     client_id: str
     service_name: str
     icp: Dict
+    genration_status: str
