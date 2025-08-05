@@ -19,9 +19,18 @@ def run_lead_pipeline(icp: Dict) -> List[Dict]:
     print(f"[✅] Detection complete. {len(detected_leads)} leads found.")
     
     print("=======[⚙️] Starting enrichment phase...=======")
-    enrich(detected_leads)
-    
-    print(f"[✅] Enrichment complete. {len(enriched_leads)} leads enriched.")
+
+    print("detected leads", detected_leads)
+
+
+    urls = enrich(detected_leads)
+
+
+
+
+
+
+    print("==========Enriched=============")
     
 
 

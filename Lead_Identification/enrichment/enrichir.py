@@ -1,5 +1,6 @@
 
 import os
+from Automated_lead_engagement.Lead_Identification.enrichment.savetocloud import saveContentToCloudinary
 from enrichment.json_putter import save_company_jsons
 from enrichment.crawl_folder.takes_json_crawl import crawl_company_data
 from enrichment.youtube_folder.takes_json_yt import append_youtube_results
@@ -56,5 +57,6 @@ def enrich(companies):
     save_company_jsons(companies)
     crawl_company_data(companies,GEMINI_API_KEY)
     append_youtube_results(companies,GEMINI_API_KEY)
+    urls = saveContentToCloudinary()
     
-
+    return urls

@@ -5,6 +5,28 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 
+def delete_all_files_in_folder(folder_path):
+    """
+    Deletes all files in the specified folder (not including subfolders).
+    
+    Parameters:
+    - folder_path (str): The path to the folder where files should be deleted.
+    """
+    if not os.path.isdir(folder_path):
+        print(f"Error: {folder_path} is not a valid directory.")
+        return
+
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isfile(file_path):
+            try:
+                os.remove(file_path)
+                print(f"Deleted: {file_path}")
+            except Exception as e:
+                print(f"Error deleting {file_path}: {e}")
+
+
+
 def upload_txt_files_to_cloudinary(
     folder_path: str,
     cloud_name: str,
@@ -102,57 +124,17 @@ def upload_txt_files_to_cloudinary(
     return uploaded_urls
 
 
-def upload_txt_files_with_env(
-    folder_path: str,
-    folder_name: Optional[str] = None
-) -> Dict[str, str]:
-    """
-    Convenience function that reads Cloudinary credentials from environment variables.
-    
-    Environment variables required:
-    - CLOUDINARY_CLOUD_NAME
-    - CLOUDINARY_API_KEY  
-    - CLOUDINARY_API_SECRET
-    
-    Args:
-        folder_path (str): Path to the folder containing .txt files
-        folder_name (str, optional): Cloudinary folder name to organize uploads
-        
-    Returns:
-        Dict[str, str]: Dictionary mapping filename to Cloudinary URL
-    """
-    
-    # Get credentials from environment variables
-    cloud_name = os.getenv('CLOUDINARY_CLOUD_NAME')
-    api_key = os.getenv('CLOUDINARY_API_KEY')
-    api_secret = os.getenv('CLOUDINARY_API_SECRET')
-    
-    if not all([cloud_name, api_key, api_secret]):
-        raise ValueError(
-            "Missing Cloudinary credentials. Please set environment variables: "
-            "CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET"
-        )
-    
-    return upload_txt_files_to_cloudinary(
-        folder_path=folder_path,
-        cloud_name=cloud_name,
-        api_key=api_key,
-        api_secret=api_secret,
-        folder_name=folder_name
-    )
-
-
 
 
 
 
 # Example usage
-if __name__ == "__main__":
+def saveContentToCloudinary():
     # Method 1: Direct credentials
     try:
-        output_dir = "crawled_data"
+        input_dir = "crawled_data"
         urls = upload_txt_files_to_cloudinary(
-            folder_path=Path(output_dir).resolve(),
+            folder_path=Path(input_dir).resolve(),
             cloud_name="daop9owk3",
             api_key="663575178492181", 
             api_secret="PKtRhurQxgzUgMT8vnMKnKDtQdA",
@@ -162,25 +144,14 @@ if __name__ == "__main__":
         print("\nUploaded URLs:")
         for filename, url in urls.items():
             print(f"{filename}: {url}")
+
+        print("lretour kima howa")
+        print(urls)
+
+        delete_all_files_in_folder(input_dir)
+
+        return urls
             
     except Exception as e:
         print(f"Upload failed: {e}")
     
-    # Method 2: Using environment variables
-    # First set your environment variables:
-    # export CLOUDINARY_CLOUD_NAME="your_cloud_name"
-    # export CLOUDINARY_API_KEY="your_api_key"
-    # export CLOUDINARY_API_SECRET="your_api_secret"
-    
-    # try:
-    #     urls = upload_txt_files_with_env(
-    #         folder_path="./text_files",
-    #         folder_name="documents"
-    #     )
-        
-    #     print("\nUploaded URLs:")
-    #     for filename, url in urls.items():
-    #         print(f"{filename}: {url}")
-            
-    # except Exception as e:
-    #     print(f"Upload failed: {e}")
