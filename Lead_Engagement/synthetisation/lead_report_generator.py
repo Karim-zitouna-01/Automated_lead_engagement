@@ -44,12 +44,12 @@ def generate_json_report(markdown_text, company_description):
             json_data[section_key] = section_content
 
     # Champs obligatoires
-    if 'nom_prenom' not in json_data:
-        json_data['nom_prenom'] = "Imen Ayari"
+    if 'name' not in json_data:
+        json_data['name'] = "none"
     if 'company_name' not in json_data:
-        json_data['company_name'] = "Talan"
-    if 'url_linkedin' not in json_data:
-        json_data['url_linkedin'] = "Non disponible"
+        json_data['company_name'] = "none"
+    if 'linkedin_profile' not in json_data:
+        json_data['linkedin_profile'] = "none"
 
     return json_data
 
@@ -61,39 +61,41 @@ def main():
         print("Erreur: GEMINI_API_KEY non trouvée dans les variables d'environnement.")
         return
 
-    # Chemin vers les données du lead (exemple pour Imen Ayari)
-    lead_data_path = r"C:\Users\yaola\Videos\formation_2025\Agentic_ai\Automated_lead_engagement\Lead_Engagement\synthetisation\data\Talan\ImenAyari"
+    lead_data_path = r"C:\Users\yaola\Videos\formation_2025\Agentic_ai\Automated_lead_engagement\Lead_Engagement\personal_research\profiles\Thierry_Millet"
 
-    # --- Agent 1: Consolidation des données ---
     print("\n--- Agent 1: Consolidation des données ---")
     consolidation_agent = DataConsolidationAgent(lead_data_path)
     consolidated_report = consolidation_agent.generate_lead_report()
     print("Rapport consolidé généré avec succès.")
 
-    # --- Agent 2: Génération de la stratégie d'engagement ---
     print("\n--- Agent 2: Génération de la stratégie d'engagement ---")
     engagement_strategy_agent = EngagementStrategyAgent(api_key=api_key)
-    final_strategy = engagement_strategy_agent.generate_strategy(report_data=consolidated_report)
+    strategy_output = engagement_strategy_agent.generate_strategy(report_data=consolidated_report)
     print("Stratégie d'engagement générée.")
 
-    # Sauvegarder le rapport Markdown à la racine du projet
-    output_file_md = os.path.join(os.path.dirname(os.path.abspath(__file__)), "imen_ayari_lead_report.md")
-    
+    # Vérifier si la sortie de l'agent contient une erreur
+    if 'error' in strategy_output:
+        print(f"Erreur de l'agent: {strategy_output['error']}")
+        return
+
+    # Extraire les rapports Markdown et JSON
+    markdown_report = strategy_output.get('markdown_report', 'Rapport non généré.')
+    json_report_data = strategy_output.get('json_report', {})
+
+    # Sauvegarder le rapport Markdown
+    output_file_md = os.path.join(os.path.dirname(os.path.abspath(__file__)), "my_lead_report.md")
     with open(output_file_md, 'w', encoding='utf-8') as f:
-        f.write(final_strategy)
-    
-    print(f"Rapport Markdown pour Imen Ayari généré et sauvegardé dans : {output_file_md}")
+        f.write(markdown_report)
+    print(f"Rapport Markdown sauvegardé dans : {output_file_md}")
 
-    # Get company description
+    # Ajouter la description de l'entreprise et sauvegarder le rapport JSON
     company_description = get_company_description(lead_data_path)
-
-    # Générer et sauvegarder le rapport JSON
-    json_report = generate_json_report(final_strategy, company_description)
-    output_file_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), "imen_ayari_lead_report.json")
-    with open(output_file_json, 'w', encoding='utf-8') as f:
-        json.dump(json_report, f, ensure_ascii=False, indent=4)
+    json_report_data['company_description'] = company_description
     
-    print(f"Rapport JSON pour Imen Ayari généré et sauvegardé dans : {output_file_json}")
+    output_file_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), "my_lead_report.json")
+    with open(output_file_json, 'w', encoding='utf-8') as f:
+        json.dump(json_report_data, f, ensure_ascii=False, indent=4)
+    print(f"Rapport JSON sauvegardé dans : {output_file_json}")
 
 
 if __name__ == "__main__":

@@ -16,21 +16,23 @@ PLATFORM_CLEANERS = {
 
 def clean_and_save(input_file: Path, platform: str):
     try:
-        raw_content = input_file.read_text(encoding='utf-8')
+        # Lecture du fichier en ignorant les erreurs d'encodage
+        raw_content = input_file.read_text(encoding='utf-8', errors='ignore')
         cleaner = PLATFORM_CLEANERS.get(platform.lower())
         if cleaner is None:
-            print(f"⚠️ Plateforme non supportée: {platform} ({input_file})")
+            print(f"Plateforme non supportée: {platform} ({input_file})")
             return
 
         cleaned_data = cleaner.clean(raw_content)
         output_file = input_file.with_name(f"{input_file.stem}_cleaned.json")
+        # Écriture du fichier nettoyé en UTF-8
         output_file.write_text(json.dumps(cleaned_data, indent=2, ensure_ascii=False), encoding='utf-8')
-        print(f"✅ {platform.title()} nettoyé: {output_file}")
+        print(f"{platform.title()} nettoyé: {output_file}")
     except Exception as e:
-        print(f"❌ Erreur de nettoyage pour {input_file}: {e}")
+        print(f"Erreur de nettoyage pour {input_file}: {e}")
 
 def process_person(person_dir: Path, entreprise: str):
-    print(f"\n🔍 Traitement de {person_dir.name} ({entreprise})")
+    print(f"\nTraitement de {person_dir.name} ({entreprise})")
     
     # 1. Nettoyage des données sociales
     for platform in PLATFORM_CLEANERS:
@@ -43,12 +45,15 @@ def process_person(person_dir: Path, entreprise: str):
         # Agent 1 : Consolidation
         consolidation_agent = DataConsolidationAgent(str(person_dir))
         consolidated_report = consolidation_agent.generate_lead_report()
-        print(f"📄 Rapport consolidé généré pour {person_dir.name}.")
+        print(f"Rapport consolidé généré pour {person_dir.name}.")
 
         # Agent 2 : Stratégie d'engagement
         engagement_agent = EngagementStrategyAgent(api_key=os.getenv("GEMINI_API_KEY"))
-        final_strategy = engagement_agent.generate_strategy(report_data=consolidated_report)
-        print(f"🎯 Stratégie d'engagement générée pour {person_dir.name}.")
+        strategy_output = engagement_agent.generate_strategy(report_data=consolidated_report)
+        print(f"Stratégie d'engagement générée pour {person_dir.name}.")
+
+        # Extraire le rapport Markdown pour la sauvegarde
+        markdown_report = strategy_output.get('markdown_report', 'Rapport non généré.')
 
         # 3. Sauvegarde du rapport markdown
         output_dir = Path("outputs") / entreprise / person_dir.name
@@ -56,12 +61,12 @@ def process_person(person_dir: Path, entreprise: str):
         output_path = output_dir / "lead_report.md"
 
         with open(output_path, "w", encoding="utf-8") as f:
-            f.write(final_strategy)
+            f.write(markdown_report)
 
-        print(f"✅ Rapport sauvegardé : {output_path}")
+        print(f"Rapport sauvegardé : {output_path}")
     
     except Exception as e:
-        print(f"❌ Erreur lors du traitement des agents pour {person_dir.name}: {e}")
+        print(f"Erreur lors du traitement des agents pour {person_dir.name}: {e}")
 
 def main(data_root: str = "data"):
     load_dotenv()
