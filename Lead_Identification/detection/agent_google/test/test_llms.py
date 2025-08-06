@@ -4,7 +4,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(__file__, "../../../..")))
 
-from common.llms import call_mistral, call_gemini_flash
+from Lead_Identification.common.llms import call_mistral, call_gemini_flash
 
 def test_call_mistral():
     prompt = "Give me 3 creative startup names for a food delivery app."

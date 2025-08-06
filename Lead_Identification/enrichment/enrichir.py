@@ -1,9 +1,12 @@
 
+import sys
 import os
-from Automated_lead_engagement.Lead_Identification.enrichment.savetocloud import saveContentToCloudinary
-from enrichment.json_putter import save_company_jsons
-from enrichment.crawl_folder.takes_json_crawl import crawl_company_data
-from enrichment.youtube_folder.takes_json_yt import append_youtube_results
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
+import os
+from Lead_Identification.enrichment.savetocloud import saveContentToCloudinary
+from Lead_Identification.enrichment.json_putter import save_company_jsons
+from Lead_Identification.enrichment.crawl_folder.takes_json_crawl import crawl_company_data
+from Lead_Identification.enrichment.youtube_folder.takes_json_yt import append_youtube_results
 from dotenv import load_dotenv
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")

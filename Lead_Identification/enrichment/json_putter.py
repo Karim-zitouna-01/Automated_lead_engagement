@@ -9,8 +9,12 @@ def sanitize_filename(name: str) -> str:
 
 def save_company_jsons(companies, output_dir = "crawled_data"):
     os.makedirs(output_dir, exist_ok=True)
+    print(" type of companies", type(companies))
 
     for company in companies:
+        print("company", company)
+        print("type of company", type(company))
+        print("company name", company.get("company_name"))
         company_name = sanitize_filename(company["company_name"])
         file_path = os.path.join(output_dir, f"{company_name}.txt")
 

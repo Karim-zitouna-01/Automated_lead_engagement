@@ -1,7 +1,7 @@
 import os
 import re
 
-from enrichment.crawl_folder.crawl import run_crawl_pipeline
+from Lead_Identification.enrichment.crawl_folder.crawl import run_crawl_pipeline
 
 def sanitize_filename(name: str) -> str:
     """Sanitize filename to remove unsafe characters."""

@@ -5,7 +5,7 @@ from typing import Dict, Any, Optional
 # Assurez-vous que le chemin vers core est correct si ce module est déplacé
 # Si ce fichier est dans le même répertoire que 'core', cela fonctionnera.
 # Sinon, vous devrez ajuster le PYTHONPATH ou le chemin d'importation.
-from detection.agent_tavily.backend_1_enrichment.core.graph_pipeline import create_lead_generation_graph, LeadGenerationState
+from Lead_Identification.detection.agent_tavily.backend_1_enrichment.core.graph_pipeline import create_lead_generation_graph, LeadGenerationState
 
 def get_enriched_leads_report(icp: dict) :
     """

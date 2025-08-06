@@ -3,7 +3,8 @@
 import json
 from typing import List, Dict
 
-from detection.agent_google.utils import generate_search_queries, search_duckduckgo, crawl_and_clean, summarize_page
+
+from Lead_Identification.detection.agent_google.utils import generate_search_queries, search_duckduckgo, crawl_and_clean, summarize_page
 
 def google_agent(icp: Dict) -> List[Dict]:
 

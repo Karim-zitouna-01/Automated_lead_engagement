@@ -1,7 +1,7 @@
 import os
 import re
 
-from enrichment.youtube_folder.yt import lanceYoutubeSearch
+from Lead_Identification.enrichment.youtube_folder.yt import lanceYoutubeSearch
 
 def sanitize_filename(name: str) -> str:
     """Sanitize filename to remove unsafe characters."""

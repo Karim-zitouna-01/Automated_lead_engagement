@@ -12,7 +12,11 @@ from Automated_lead_engagement.server.models.lead import Lead,KeyPersonal
 
 # Initialize Firebase
 cred = credentials.Certificate("./secret/serviceAccountKey.json")
-firebase_admin.initialize_app(cred)
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred)
+else:
+    #reinitialize the app if it already exists
+    firebase_admin.initialize_app(cred, name='default')
 db = firestore.client()
 
 # Function to parse key_personals from raw strings
@@ -46,7 +50,7 @@ def upload_leads_to_firestore(
             id="",  # Will not be used; Firestore auto-ID
             company_name=company_name,
             key_personals=[KeyPersonal(**kp) for kp in parsed_key_personals],
-            report_url=report_urls.get(company_name, ""),
+            report_url=report_urls.get(company_name +".txt", "x"),
             qualification_url="",
             service_id=service_id
         )

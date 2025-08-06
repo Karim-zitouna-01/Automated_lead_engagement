@@ -1,9 +1,9 @@
 from typing import List, Dict
-from detection.agent_google.agent import google_agent
-from detection.agent_tavily.backend_1_enrichment.lead_enrichment_module import get_enriched_leads_report
+from Lead_Identification.detection.agent_google.agent import google_agent
+from Lead_Identification.detection.agent_tavily.backend_1_enrichment.lead_enrichment_module import get_enriched_leads_report
 # Uncomment the following line if you have a LinkedIn agent implemented
 # from detection.agent_linkedin import linkedin_agent  # Uncomment if exists
-from common.llms import call_gemini_flash,call_mistral
+from Lead_Identification.common.llms import call_gemini_flash,call_mistral
 
 
 import json
@@ -81,9 +81,9 @@ the key personal field should be a list of json objects with the following field
     try:
         leads_str = json.dumps(leads, indent=2)
         llm_input = f"{prompt}\n\nLeads:\n{leads_str}"
-        response = call_mistral(llm_input, max_tokens=1000, temperature=0.2)
+        response = call_mistral(llm_input, max_tokens=10000, temperature=0.2)
         print("llm response: \n", response)
-        return response
+        return json.loads(response)
     except Exception as e:
         print(f"[❌] LLM analysis failed: {e}")
         return leads

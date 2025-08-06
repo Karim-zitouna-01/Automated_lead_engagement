@@ -1,4 +1,7 @@
 import re
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 import asyncio
 from crawl4ai import CrawlerRunConfig, AsyncWebCrawler
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
