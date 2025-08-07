@@ -23,7 +23,9 @@ cred = credentials.Certificate("firebase_key.json")  # Ton fichier clé Firebase
 initialize_app(cred)
 db = firestore.client()
 
+
 def process_leads(service_id_input=service_id_input):
+
     leads_data = []
 
     # Créer le dossier outputs si inexistant
