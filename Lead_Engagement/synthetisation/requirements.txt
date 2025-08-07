@@ -21,3 +21,4 @@ langchain-google-genai
 chromadb
 nltk
 streamlit
+tavily-python

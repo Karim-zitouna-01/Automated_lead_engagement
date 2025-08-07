@@ -15,22 +15,19 @@
 
 
 
-# personnel_list = [
-#         {"name": "Thierry Millet", "title": "CEO, Orange Tunisie", "linkedin_profile": None},
-#         {"name": "Siwar Farhat", "title": "Former Director Sofrecom Tunisia", "linkedin_profile": None}
-#     ]
-# company_name = "Orange Tunisie"
-# icp = {
-#     "industry": {"tier1_core_focus": ["digital transformation", "telecom services"]},
-#     "pain_points": ["digital adoption among SMEs", "cybersecurity services uptake", "start-up acceleration"]
-# }
+personnel_list = [
+        {"name": "Thierry Millet", "title": "CEO, Orange Tunisie", "linkedin_profile": None},
+    ]
+company_name = "Orange Tunisie"
+icp = {
+    "industry": {"tier1_core_focus": ["digital transformation", "telecom services"]},
+    "pain_points": ["digital adoption among SMEs", "cybersecurity services uptake", "start-up acceleration"]
+}
 
-# usernames_list=[{"name": "Thierry Millet", "linkedin_profile": "l_id_linkedin",
-#                 "twitter_profile": "l_id_twitter",
-#                 "instagram_profile": "l_id_instagram"},
-#                {"name": "Siwar Farhat", "linkedin_profile": "s_id_linkedin",
-#                 "twitter_profile": "s_id_twitter",
-#                 "instagram_profile": "s_id_instagram"}]
+usernames_list=[{"name": "Thierry Millet", "linkedin_profile": "thierry-millet-b60809b3",
+                "twitter_profile": "millet_thierryr",
+                "instagram_profile": "thierry.millet64"},
+              ]
 
 
 
@@ -38,14 +35,16 @@
 import json
 import os
 
-from Automated_lead_engagement.Lead_Engagement.personal_research.social_media import search_all
-from tavily import get_enriched_personnel_profiles
+from social_media import search_all
+from tavily_searcher import get_enriched_personnel_profiles
 
 def write_profiles_to_files(profiles, output_dir="profiles"):
     """
     Wraps each profile in a 'tavily' dictionary and writes it to a separate JSON file.
     """
     os.makedirs(output_dir, exist_ok=True)
+    
+    profiles = json.loads(profiles)
 
     for profile in profiles:
         name = profile.get("name", "unknown").replace(" ", "_")
@@ -89,12 +88,11 @@ def append_social_search_to_file(name, social_data, output_dir="profiles"):
 
 
 def engagement_01(personnel_list, company_name, icp, usernames_list):
-
     enriched = get_enriched_personnel_profiles(personnel_list, company_name, icp)
     tavvy_personal_data = json.dumps(enriched, indent=2, ensure_ascii=False)
 
     write_profiles_to_files(tavvy_personal_data)
-
+    
 
     for person in usernames_list:
         name = person.get("name")
@@ -108,21 +106,13 @@ def engagement_01(personnel_list, company_name, icp, usernames_list):
         print("linkedin_id , twitter_id , insta_id")
         print(linkedin_id, twitter_id, insta_id)
 
-        for person in usernames_list:
-            name = person.get("name")
-            if not name:
-                continue
-            linkedin_id = person.get("linkedin_profile", "").strip()
-            twitter_id = person.get("twitter_profile", "").strip()  
-            insta_id = person.get("instagram_profile", "").strip()
 
 
-            # social_data = search_all(linkedin_id, twitter_id, insta_id)
-            social_data = " "
-            append_social_search_to_file(name, social_data)
+        social_data = search_all(linkedin_id, twitter_id, insta_id)
+        append_social_search_to_file(name, social_data)
 
 
 
 
-# if __name__ == "__main__":
-#     engagement_01(personnel_list, company_name, icp, usernames_list)
+if __name__ == "__main__":
+    engagement_01(personnel_list, company_name, icp, usernames_list)

@@ -2,6 +2,10 @@ import json
 from apify_client import ApifyClient
 import http.client
 
+APIFY_KEY="apify_api_8Tshzy61AFMoqcD9O2fnxODpgAH9CK4oDuVu"
+RAPID_API_KEY="30f0a8d6e4msh13d82afdd7da410p195c0ejsn41d7f2805fb1"
+
+
 def linkedinsearch(username):
 
     if username:

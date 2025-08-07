@@ -3,10 +3,11 @@ import json
 from typing import List, Dict, Any, Optional, TypedDict
 from dotenv import load_dotenv
 import google.generativeai as genai
-from tavily import TavilyClient
 from langchain_google_genai import ChatGoogleGenerativeAI
-
+from tavily import TavilyClient
 load_dotenv()
+
+
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
