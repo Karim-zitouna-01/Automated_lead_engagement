@@ -1,0 +1,66 @@
+{
+  "name": "",
+  "title": "",
+  "company": "",
+  "contact_info": {
+    "linkedin_profile_url": "",
+    "instagram_username": "",
+    "twitter_username": ""
+  },
+  "summary": {
+    "recent_activity": "",
+    "points_of_interest": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "potential_pain_points": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "social_media_stats": {
+    "instagram": {
+      "followers": 0,
+      "following": 0,
+      "posts": 0,
+      "engagement_rate": 0.0,
+      "category": ""
+    },
+    "linkedin": {
+      "total_posts": 0,
+      "total_engagement": 0
+    },
+    "twitter": {
+      "total_tweets": 0,
+      "total_likes": 0,
+      "total_retweets": 0,
+      "total_replies": 0,
+      "total_quotes": 0,
+      "total_views": 0
+    }
+  },
+  "recent_social_activity": {
+    "linkedin_posts": [
+      {
+        "date": "",
+        "text": "",
+        "url": ""
+      },
+      {
+        "date": "",
+        "text": "",
+        "url": ""
+      },
+      {
+        "date": "",
+        "text": "",
+        "url": ""
+      }
+    ],
+    "twitter_tweets": []
+  },
+  "company_description": ""
+}

@@ -43,6 +43,8 @@ def write_profiles_to_files(profiles, output_dir="profiles"):
     Wraps each profile in a 'tavily' dictionary and writes it to a separate JSON file.
     """
     os.makedirs(output_dir, exist_ok=True)
+    
+    profiles = json.loads(profiles)
 
     for profile in profiles:
         name = profile.get("name", "unknown").replace(" ", "_")
