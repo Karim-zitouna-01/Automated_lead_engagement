@@ -3,8 +3,10 @@ from typing import Dict
 
 class Service(BaseModel):
     id: str
-    client_id: str
+    client_id: str =""
     service_name: str
     icp: Dict
-    genration_status: str
+    generation_status: str
+    created_at: str = ""
+
 

@@ -1,15 +1,15 @@
 # scripts/insert_service.py
 
-from server.common.firebase_config import db  # assumes this is your firestore client
+from server.common.firebase_config import get_firestore_db  # assumes this is your firestore client
 import uuid
 from datetime import datetime
-
+db= get_firestore_db()
 def insert_sample_service():
     service_id = str(uuid.uuid4())
 
     service_data = {
         "id": service_id,
-        "name": "AI Consulting",
+        "service_name": "AI Consulting",
         "icp": {
   "service": "AI Consulting",
   "ideal_customer_profile": {
@@ -111,7 +111,7 @@ def insert_sample_service():
   }
 },
         "generation_status": "pending",
-        "created_at": datetime.utcnow().isoformat()
+        
     }
 
     db.collection("services").document(service_id).set(service_data)

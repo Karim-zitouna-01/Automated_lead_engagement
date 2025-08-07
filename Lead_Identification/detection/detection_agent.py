@@ -81,7 +81,7 @@ the key personal field should be a list of json objects with the following field
     try:
         leads_str = json.dumps(leads, indent=2)
         llm_input = f"{prompt}\n\nLeads:\n{leads_str}"
-        response = call_mistral(llm_input, max_tokens=10000, temperature=0.2)
+        response = call_mistral(llm_input, max_tokens=100000, temperature=0.1)
         print("llm response: \n", response)
         return json.loads(response)
     except Exception as e:
