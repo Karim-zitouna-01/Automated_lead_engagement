@@ -4,6 +4,7 @@ from server.common.firebase_config import get_firestore_db
 from celery import shared_task
 from server.common.celery_config import celery_app
 from Lead_Identification.integration.identification import run_lead_pipeline
+from Lead_Qualification.main import process_leads
 
 db= get_firestore_db()
 
@@ -18,6 +19,16 @@ def run_pipeline_task(icp: dict, service_id: str):
     except Exception as e:
         db.collection("services").document(service_id).update({"generation_status": "error"})
         raise e
+    print ("=========start lead qualification=====")
+    try:
+        process_leads(service_id)
+        print("Lead qualification completed successfully")
+        
+    except Exception as e:
+        print(f"Error during lead qualification: {e}")
+        
+        raise e
+    
 
 
 def get_icp(service_id: str) -> dict:

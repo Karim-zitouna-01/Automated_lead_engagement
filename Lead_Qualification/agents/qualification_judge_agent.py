@@ -4,26 +4,45 @@ from typing import Dict, Tuple
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from langchain_together import ChatTogether
+from google.genai import Client, types  # ✅ Gemini SDK
 
 load_dotenv()
 
 class QualificationJudgeAgent:
     def __init__(self):
-        self.prompt_template = Path("prompts/qualification_judge_prompt.txt").read_text(encoding="utf-8")
-        self.api_key = os.getenv("TOGETHER_QUALIFICATION_API_KEY")
-        if not self.api_key:
-            raise ValueError("\u274c TOGETHER_QUALIFICATION_API_KEY is missing in your .env file.")
+        # Charger le prompt
+        self.prompt_template = Path(
+            "Lead_Qualification/prompts/qualification_judge_prompt.txt"
+        ).read_text(encoding="utf-8")
 
-        self.model = ChatTogether(
-            together_api_key=self.api_key,
-            model="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
-        )
+        # Clé API Gemini
+        self.api_key = os.getenv("GEMINI_API_KEY")
+        if not self.api_key:
+            raise ValueError("❌ GEMINI_API_KEY is missing in your .env file.")
+
+        # Client Gemini
+        self.client = Client(api_key=self.api_key)
 
     def judge_gcpt(self, parsed_gcpt: Dict) -> Tuple[float, str]:
         judge_prompt = f"{self.prompt_template}\n\n{json.dumps(parsed_gcpt, indent=2)}"
-        response = self.model.invoke(judge_prompt)
-        judged_gcpt = self._extract_and_validate_json(response.content.strip())
+
+        # Préparer la requête Gemini
+        contents = [types.Part.from_text(text=judge_prompt)]
+        config = types.GenerateContentConfig(
+            temperature=0.2,
+            max_output_tokens=100000
+        )
+
+        # Appel API Gemini
+        response = self.client.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=contents,
+            config=config
+        )
+
+        raw_output = response.text.strip()
+
+        judged_gcpt = self._extract_and_validate_json(raw_output)
 
         score = self._calculate_gpct_score(judged_gcpt)
         justification = judged_gcpt.get("justification", "No justification provided.")
@@ -33,14 +52,14 @@ class QualificationJudgeAgent:
     def _extract_and_validate_json(self, text: str) -> Dict:
         match = re.search(r"\{.*\}", text, re.DOTALL)
         if not match:
-            raise Exception(f"\u274c Judge Phase: No JSON found.\nResponse: {text}")
+            raise Exception(f"❌ Judge Phase: No JSON found.\nResponse: {text}")
 
         json_str = self._clean_json_string(match.group(0))
 
         try:
             return json.loads(json_str)
         except json.JSONDecodeError as jde:
-            raise Exception(f"\u274c Judge Phase: JSON Decode Error: {str(jde)}\nRaw JSON: {json_str}")
+            raise Exception(f"❌ Judge Phase: JSON Decode Error: {str(jde)}\nRaw JSON: {json_str}")
 
     def _clean_json_string(self, text: str) -> str:
         text = text.replace("\u201c", "\"").replace("\u201d", "\"")

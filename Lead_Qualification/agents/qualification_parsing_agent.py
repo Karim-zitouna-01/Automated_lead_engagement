@@ -4,39 +4,56 @@ from typing import Dict
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from langchain_together import ChatTogether
+from google.genai import Client, types  # ✅ Gemini SDK
 
 load_dotenv()
 
 class QualificationParsingAgent:
     def __init__(self):
-        self.prompt_template = Path("prompts/qualification_parsing_prompt.txt").read_text(encoding="utf-8")
-        self.api_key = os.getenv("TOGETHER_qualification_parsing_API_KEY")
-        if not self.api_key:
-            raise ValueError("\u274c TOGETHER_QUALIFICATION_API_KEY is missing in your .env file.")
+        # Charger le prompt
+        self.prompt_template = Path(
+            "Lead_Qualification/prompts/qualification_parsing_prompt.txt"
+        ).read_text(encoding="utf-8")
 
-        self.model = ChatTogether(
-            together_api_key=self.api_key,
-            model="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
-        )
+        # Clé API Gemini
+        self.api_key = os.getenv("GEMINI_API_KEY")
+        if not self.api_key:
+            raise ValueError("❌ GEMINI_API_KEY is missing in your .env file.")
+
+        # Client Gemini
+        self.client = Client(api_key=self.api_key)
 
     def parse_report(self, report_text: str) -> Dict:
         parsing_prompt = f"{self.prompt_template}\n\n{report_text}"
-        response = self.model.invoke(parsing_prompt)
-        parsed_json = self._extract_and_validate_json(response.content.strip())
-        return parsed_json
+
+        # Construire la requête Gemini
+        contents = [types.Part.from_text(text=parsing_prompt)]
+        config = types.GenerateContentConfig(
+            temperature=0.2,
+            max_output_tokens=100000
+        )
+
+        # Appel API Gemini
+        response = self.client.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=contents,
+            config=config
+        )
+
+        raw_output = response.text.strip()
+        return self._extract_and_validate_json(raw_output)
 
     def _extract_and_validate_json(self, text: str) -> Dict:
         match = re.search(r"\{.*\}", text, re.DOTALL)
         if not match:
-            raise Exception(f"\u274c Parsing Phase: No JSON found.\nResponse: {text}")
+            raise Exception(f"❌ Parsing Phase: No JSON found.\nResponse: {text}")
 
         json_str = self._clean_json_string(match.group(0))
 
         try:
             return json.loads(json_str)
         except json.JSONDecodeError as jde:
-            raise Exception(f"\u274c Parsing Phase: JSON Decode Error: {str(jde)}\nRaw JSON: {json_str}")
+            raise Exception(f"❌ Parsing Phase: JSON Decode Error: {str(jde)}\nRaw JSON: {json_str}")
 
     def _clean_json_string(self, text: str) -> str:
         text = text.replace("\u201c", "\"").replace("\u201d", "\"")

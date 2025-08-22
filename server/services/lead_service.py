@@ -16,7 +16,7 @@ def get_all_leads(service_id: str) -> List[Lead]:
         raise ValueError("Lead generation not completed yet")
 
     # Fetch leads with matching service_id
-    leads_docs = db.collection("leads").where("service_id", "==", service_id).stream()
+    leads_docs = db.collection("Leads").where("service_id", "==", service_id).stream()
     leads = []
 
     for doc in leads_docs:

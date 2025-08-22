@@ -5,8 +5,8 @@ from server.models.lead import Lead
 
 router = APIRouter()
 
-@router.get("/leads", response_model=List[Lead])
-def get_leads_endpoint(service_id: str = Query(...)):
+@router.get("/all/{service_id}", response_model=List[Lead])
+def get_leads_endpoint(service_id: str ):
     try:
         leads = get_all_leads(service_id)
         return leads
